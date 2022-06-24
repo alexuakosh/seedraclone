@@ -72,9 +72,7 @@ app.use("/api/partners", partners);
 app.use("/api/searchKeys", searchKeys);
 // app.use("/", mainRoute);
 
-// Server static assets if in production
 
-// Set static folder
 app.use(express.static("client/build"));
 
 app.get("*", (req, res) => {
