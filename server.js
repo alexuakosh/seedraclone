@@ -72,7 +72,6 @@ app.use("/api/partners", partners);
 app.use("/api/searchKeys", searchKeys);
 // app.use("/", mainRoute);
 
-
 app.use(express.static("client/build"));
 
 app.get("*", (req, res) => {
