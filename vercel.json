@@ -1,7 +1,14 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "*.html", "use": "react-scripts build" },
-    { "src": "*.js", "use": "@vercel/node" }
+    {
+      "src": "server.js",
+      "use": "@now/node"
+    },
+    {
+      "src": "client/src",
+      "use": "react-scripts build"
+    }
   ],
   "routes": [
     {
