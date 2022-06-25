@@ -1,6 +1,6 @@
 {
   "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.html", "use": "react-scripts build" },
     { "src": "*.js", "use": "@vercel/node" }
   ],
   "routes": [
