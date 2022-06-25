@@ -1,15 +1,8 @@
 {
-  "version": 2,
   "builds": [
-    {
-      "src": "server.js",
-      "use": "@now/node"
-    }
+    { "src": "client/src", "use": "react-scripts" },
+    { "src": "*.js", "use": "@vercel/node" }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ]
+
+  "routes": [{ "src": "*", "dest": "server.js" }]
 }
