@@ -7,7 +7,7 @@
     },
     {
       "src": "client/src",
-      "use": "react-scripts build"
+      "use": "react-scripts"
     }
   ],
   "routes": [
